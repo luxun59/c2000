@@ -1,12 +1,12 @@
-ads1256驱动	ads1256.c			
-矩阵键盘驱动	key4x4.c			
-adc	myadc.c	"实现 ePWM触发，多通道ADC+DMA 最高实测1.1M采样率,通道修改通过SOC"	1.只能使用无法通过修改宏使用ADCC或ADCB2.仍需要在adc1中断函数中清标志位	
-窗口比较器	"mycmpss,c"	实现 AB6 输入，窗口比较器，并使用xbar映射到gpio14输出	无法直接触发中断，需要借助gpio中断	
-DAC	mydac.c	epwm2驱动DAC输出 实测最大1.5M采样率，使用ADC参考电压		①参考电压可以设置VDAC或VADC②设置输出增益③设置时钟源
-输入捕获	myecap.c	输入捕获 测量频率， 计算公式 被测频率 = 100k/采样时间 实测最高可到1m		
-fft	myfft.c	实数fft		
-pid	mypid.c			
-串口及printf重写	myuart.c			
-0.96寸oled驱动支持IIC和SPI	oled.c oledfront.c			
-tlv5618驱动	tlv5618.c			
-tpl0401驱动	tpl0401.c			
+ads1256驱动,ads1256.c			
+矩阵键盘驱动,key4x4.c			
+adc,	myadc.c ,实现 ePWM触发，多通道ADC+DMA 最高实测1.1M采样率,通道修改通过SOC"	,1.只能使用无法通过修改宏使用ADCC或ADCB2.仍需要在adc1中断函数中清标志位	
+窗口比较器,	mycmpss.c ,实现 AB6 输入，窗口比较器，并使用xbar映射到gpio14输出	,无法直接触发中断，需要借助gpio中断	
+DAC,	mydac.c	,epwm2驱动DAC输出 实测最大1.5M采样率，使用ADC参考电压		,①参考电压可以设置VDAC或VADC②设置输出增益③设置时钟源
+输入捕获,	myecap.c,	输入捕获 测量频率， 计算公式 被测频率 = 100k/采样时间 ,实测最高可到1m		
+fft,	myfft.c,	,实数fft		
+pid	,mypid.c			
+串口及printf重写,	myuart.c			
+0.96寸oled驱动支持IIC和SPI,	oled.c oledfront.c			
+tlv5618驱动,	tlv5618.c			
+tpl0401驱动,	tpl0401.c			
